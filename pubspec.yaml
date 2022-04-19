@@ -1,0 +1,121 @@
+name: project_template
+description: Template for project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.2 <3.0.0"
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  #  STATE MANAGEMENT AND DI
+  flutter_bloc: ^7.2.0
+  equatable: ^2.0.3
+  injectable: ^1.5.0
+  flutter_dotenv: ^5.0.2
+  freezed_annotation: ^0.14.2
+
+  #  NAVIGATION
+  routemaster: ^0.9.5
+  modal_bottom_sheet: ^2.0.0
+
+  #  NETWORK
+  dio: ^4.0.0
+  dio_cookie_manager: ^2.0.0
+  connectivity: ^3.0.6
+  http: ^0.13.4
+  webview_flutter: ^2.1.2
+  flutter_inappwebview: ^5.3.2
+  url_launcher: ^6.0.12
+
+  # DB
+  drift: ^1.5.0
+  sqlite3_flutter_libs: ^0.5.0
+  path: ^1.8.0
+
+  #  UTILS
+  share: ^2.0.4
+  package_info: ^2.0.2
+  device_info: ^2.0.2
+  shared_preferences: ^2.0.7
+  flutter_secure_storage: ^4.2.1
+  intl: ^0.17.0
+  uni_links: ^0.5.1
+  auto_size_text: ^3.0.0-nullsafety.0
+  swipeable_tile: ^0.0.2
+  sizer: ^2.0.15
+  path_provider: ^2.0.5
+  smooth_page_indicator: ^1.0.0+2
+  expandable_page_view: ^1.0.8
+  preload_page_view: ^0.1.6
+  shimmer: ^2.0.0
+
+  #  IMAGES
+  cached_network_image: ^3.1.0
+  image_picker: ^0.8.4
+  image_cropper: ^1.4.1
+  flutter_svg: ^0.22.0
+  photo_view: ^0.13.0
+
+  # ICONS
+  cupertino_icons: ^1.0.3
+  google_fonts: ^2.1.0
+
+  # FORMS
+  reactive_forms: ^10.6.0
+  currency_text_input_formatter: ^2.1.5
+
+  # FIREBASE
+  firebase_core: ^1.6.0
+  firebase_messaging: ^10.0.6
+  firebase_analytics: ^8.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  injectable_generator: ^1.4.1
+  build_runner: ^2.1.2
+  drift_dev: ^1.5.2
+  json_serializable: ^6.1.5
+  freezed: ^0.14.2
+  very_good_analysis: ^2.4.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+  uses-material-design: true
+
+  assets:
+    - .env
+    - assets/media/icons/
+    - assets/media/images/
+
+  fonts:
+    - family: SF Pro Display
+      fonts:
+        - asset: fonts/SF-Pro-Display-Semibold.otf
+          weight: 600
